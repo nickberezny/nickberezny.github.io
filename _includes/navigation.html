@@ -1,0 +1,13 @@
+<nav>
+	<div class="nav-wrapper">
+		<div class="container">
+	  	<a href="#!" class="brand-logo center"></a>
+	    	<ul class="left hide-on-med-and-down">
+		      	{% for item in site.data.navigation %}
+		    		<li><a href="{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %}>{{ item.name }}</a></li>
+		  		{% endfor %} 
+	  		</ul>
+	  	</div>
+	</div>
+</nav>
+
