@@ -1,5 +1,4 @@
-.current {
-  color: green;
-}
-
-$primary-color: color("materialize-blue", "lighten-2") !default;
+@import "materialize-src/sass/components/color-variables.scss";
+$primary-color: color("blue", "accent-3") !default;
+$secondary-color: color("orange", "dark-3") !default;
+@import "materialize-src/sass/materialize.scss";
