@@ -8,20 +8,19 @@ title: Blog
 <ul>
   {% for post in site.posts %}
 	    <div class="col s3 m6">
+	    <a href="{{ post.url | prepend: site.baseurl }}">
 	      <div class="card">
 	        <div class="card-image">
-	          <img src="{{ post.image }}">
-	          <span class="card-title">{{ post.title }}</span>
+	        	<div class="image-cont">
+		          <img src="{{ post.image }}" >
+		        </div>
+		        <span class="card-title">{{ post.title }}</span>
 	        </div>
 	        <div class="card-content">
 	           <p>{{ post.excerpt }}</p>
 	        </div>
-	        <div class="card-action">
-	          <a href="{{ post.url | prepend: site.baseurl }}">
-	            Read More
-	          </a>
-	        </div>
 	      </div>
+	      </a>
 	    </div>
   {% endfor %}
 </ul>

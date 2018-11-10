@@ -2,3 +2,40 @@
 $primary-color: color("indigo", "darken-4") !default;
 $secondary-color: color("indigo", "darken-3") !default;
 @import "materialize-src/sass/materialize.scss";
+
+* {
+    font-family: 'Raleway', sans-serif;
+}
+
+h1 h2 h3 {
+	font-family: 'Overlock SC', sans-serif;
+}
+
+.nav-wrapper {
+	font-family: 'Overlock SC', sans-serif;
+}
+
+.card-title {
+	font-family: 'Overlock SC', sans-serif;
+}
+
+
+.card {
+	overflow: hidden
+}
+
+.card:hover {
+	.image-cont {
+		transition: all 1s ease;
+		transform: scale(1.06);
+		}
+}
+
+.image-cont {
+	overflow: hidden;
+	transition: all .5s ease;
+}
+
+.card-content {
+	color: black
+}

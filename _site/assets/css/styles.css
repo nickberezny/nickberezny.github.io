@@ -2591,3 +2591,18 @@ input[type=range]::-ms-thumb { border: none; height: 14px; width: 14px; border-r
   .timepicker-container.modal-content { flex-direction: row; }
   .timepicker-text-container { top: 32%; }
   .timepicker-display-am-pm { position: relative; right: auto; bottom: auto; text-align: center; margin-top: 1.2rem; } }
+* { font-family: 'Raleway', sans-serif; }
+
+h1 h2 h3 { font-family: 'Overlock SC', sans-serif; }
+
+.nav-wrapper { font-family: 'Overlock SC', sans-serif; }
+
+.card-title { font-family: 'Overlock SC', sans-serif; }
+
+.card { overflow: hidden; }
+
+.card:hover .image-cont { transition: all 1s ease; transform: scale(1.06); }
+
+.image-cont { overflow: hidden; transition: all .5s ease; }
+
+.card-content { color: black; }

@@ -1,6 +1,8 @@
-- name: Home
+- name: HOME
   link: /
-- name: Blog
+- name: PROJECTS
   link: /blog.html
-- name: About
+- name: ARTICLES
+  link: /articles.html
+- name: ABOUT
   link: /about.html
