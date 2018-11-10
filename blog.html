@@ -12,12 +12,22 @@ title: Blog
 	      <div class="card">
 	        <div class="card-image">
 	        	<div class="image-cont">
-		          <img src="{{ post.image }}" >
+		          <img src="assets/images/{{ post.image }}" >
 		        </div>
 		        <span class="card-title">{{ post.title }}</span>
 	        </div>
 	        <div class="card-content">
-	           <p>{{ post.excerpt }}</p>
+	        	<div class="card-main">
+		        	<div class="card-date">
+		        		{{post.date | date_to_string}}
+		        	</div>
+		           <p>{{ post.excerpt }}</p>
+		       </div>
+	           <div class="card-tags">
+	           		{% for tag in post.tags %}
+	           		<a class="waves-effect waves-light btn-small secondary-color">{{tag}}</a>
+	           		{% endfor %}
+	           </div>
 	        </div>
 	      </div>
 	      </a>

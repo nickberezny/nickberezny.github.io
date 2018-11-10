@@ -1,6 +1,6 @@
 @import "materialize-src/sass/components/color-variables.scss";
 $primary-color: color("indigo", "darken-4") !default;
-$secondary-color: color("indigo", "darken-3") !default;
+$secondary-color: color("brown", "darken-2") !default;
 @import "materialize-src/sass/materialize.scss";
 
 * {
@@ -19,7 +19,6 @@ h1 h2 h3 {
 	font-family: 'Overlock SC', sans-serif;
 }
 
-
 .card {
 	overflow: hidden
 }
@@ -36,6 +35,15 @@ h1 h2 h3 {
 	transition: all .5s ease;
 }
 
-.card-content {
+.card-main {
 	color: black
 }
+
+.card-date {
+	font-weight: bold;
+}
+
+.card-tags {
+	padding-top: 10px;
+}
+
