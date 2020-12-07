@@ -13,7 +13,7 @@ let app = new PIXI.Application({
 	width: 256, 
 	height: 256,
 	antialias: true,
-	transparent: false
+	transparent: false,
 	}
 );
 
@@ -37,7 +37,6 @@ function setup() {
   sprite.buttonMode = true;
   sprite.on('pointerdown', function(){onClick(sprite);});
 
- console.log(app.renderer.width)
 }
 
 function onClick(sprite) {
@@ -45,6 +44,16 @@ function onClick(sprite) {
     sprite.scale.y *= 1.25;
 }
 
+window.onresize = function()
+{
+	app.renderer.resize(window.innerWidth, window.innerHeight);
+	console.log(app.stage.width)
+	//app.stage.width = app.renderer.width;
+	//app.stage.height = app.renderer.height;
+	//app.stage.height = app.renderer.height;
+ 		
+	console.log('resize!');
+}
 
 //Add the canvas that Pixi automatically created for you to the HTML document
 document.body.appendChild(app.view);
