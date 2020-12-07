@@ -21,14 +21,15 @@ app.renderer.view.style.position = "absolute";
 app.renderer.view.style.display = "block";
 app.renderer.autoResize = true;
 app.renderer.resize(window.innerWidth, window.innerHeight);
+app.renderer.backgroundColor = 0xFFFFFF;
 
 PIXI.loader
-  .add("slothSnooze.png")
+  .add("images/slothSnooze.png")
   .load(setup);
 
 function setup() {
   let sprite = new PIXI.Sprite(
-    PIXI.loader.resources["slothSnooze.png"].texture
+    PIXI.loader.resources["images/slothSnooze.png"].texture
   );
   app.stage.addChild(sprite);
 
