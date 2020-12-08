@@ -26,6 +26,12 @@
 */
 
 
+:root {
+  --primary: #869465; 
+  --secondary: #60858f;
+};
+
+
 /* Grid
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .container {
@@ -161,7 +167,7 @@ p {
 a {
   color: #1EAEDB; }
 a:hover {
-  color: #0FA0CE; }
+  color: var(--secondary); }
 
 
 /* Buttons

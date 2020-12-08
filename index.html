@@ -5,7 +5,7 @@
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
-  <title>Your page title here :)</title>
+  <title>Website</title>
   <meta name="description" content="">
   <meta name="author" content="">
 
@@ -43,25 +43,38 @@
   <div class="container">
     <ul class="navbar-list">
       <li class="navbar-item">
-        <a class="navbar-link" onClick="changeContent()" href="#null">Intro</a>
+        <a class="navbar-link active" id="first" onClick="changeContent('Home', 'first')" href="#null">Home</a>
       </li>
       <li class="navbar-item">
-        <a class="navbar-link" href="#null">Intro</a>
+        <a class="navbar-link" id="second" onClick="changeContent('Robot', 'second')" href="#null">Robotics</a>
+      </li>
+      <li class="navbar-item">
+        <a class="navbar-link" id="third" onClick="changeContent('Games', 'third')" href="#null">Games</a>
+      </li>
+      <li class="navbar-item">
+        <a class="navbar-link" id="fourth" onClick="changeContent('Publications', 'fourth')" href="#null">Publications</a>
       </li>
     </ul>
   </div>
 </nav>
 </div>
   
-  <div class="header">
-    <div class="title"><h3 calss="section-heading">Title Test</h3></div>
-  </div>
+
   
 
   <div class="container">
       <div class="section">
         <div id="Content">
-          <!-- <script type="text/javascript" src="./Pixi/test.js"></script> -->
+          <div class="container">
+            <div class="row">
+              <div class="six columns">
+                12
+              </div>
+              <div class="six columns">
+                test test
+              </div>
+            </div>
+          </div>
         </div>
 
       </div>
