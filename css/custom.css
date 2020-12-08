@@ -122,7 +122,9 @@ img {
   .navbar-list {
     list-style: none;
     margin-bottom: 0;
-     }
+    justify-content: center;
+    display: flex;
+    }
   .navbar-item {
     position: relative;
     float: left;
