@@ -16,10 +16,6 @@ img {
 }
 
 
-
-
-.container {
-  margin-left: 0.5rem; }
 .header {
   margin-top: 0rem;
   text-align: center; }
@@ -161,8 +157,6 @@ img {
 
 /* Larger than phone */
 @media (min-width: 550px) {
-  .container {
-  margin-left: 10rem; }
   .navbar-small {
     display: none;
   }
@@ -204,8 +198,6 @@ img {
 /* Larger than tablet */
 @media (min-width: 750px) {
   /* Navbar */
-  .container {
-  margin-left: 10rem; }
   .navbar + .docs-section {
     border-top-width: 0; }
   .navbar-small {
