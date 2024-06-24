@@ -38,10 +38,7 @@ function setup() {
   sprite.buttonMode = true;
   sprite.on('pointerdown', function(){onClick(sprite);});
 
-  $("#Content").load('pages/Research.html')
-  $(".active").removeClass('active')
-  $('#first').addClass('active')
-
+  changeContent('Research', 'first')
 }
 
 function onClick(sprite) {
