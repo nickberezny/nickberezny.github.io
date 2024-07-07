@@ -5,7 +5,11 @@ $("#Content").load('pages/Research.html')
 $(".active").removeClass('active')
 $('#first').addClass('active')
 
-document.getElementById("Bunny").style.top="400px";
+for (let i = 0; i < 1000; i++) {
+  document.getElementById("Bunny").style.top=i+"px";
+}
+
+
 
 
 function changeContent(name, id)
