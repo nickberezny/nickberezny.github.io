@@ -38,7 +38,7 @@ function setup() {
   sprite.buttonMode = true;
   sprite.on('pointerdown', function(){onClick(sprite);});
 
-  changeContent('Research', 'first')
+  
 }
 
 function onClick(sprite) {
@@ -59,3 +59,4 @@ window.onresize = function()
 
 //Add the canvas that Pixi automatically created for you to the HTML document
 document.body.appendChild(app.view);
+changeContent('Research', 'first');
