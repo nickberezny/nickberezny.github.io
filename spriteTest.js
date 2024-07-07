@@ -1,13 +1,13 @@
 (async () =>
 {
     // Create a new application
-    const app = new PIXI.Application();
+    //const app = new PIXI.Application();
 
     // Initialize the application
-    await app.init({ background: '#1099bb', resizeTo: window });
+    //await app.init({ background: '#1099bb', resizeTo: window });
 
     // Append the application canvas to the document body
-    document.body.appendChild(app.canvas);
+    //document.body.appendChild(app.canvas);
 
     // Load the bunny texture
     const texture = await PIXI.Assets.load('https://pixijs.com/assets/bunny.png');
@@ -22,9 +22,10 @@
     bunny.x = app.screen.width / 2;
     bunny.y = app.screen.height / 2;
 
-    app.stage.addChild(bunny);
+    //app.stage.addChild(bunny);
 
     // Listen for animate update
+    /*
     app.ticker.add((time) =>
     {
         // Just for fun, let's rotate mr rabbit a little.
@@ -32,4 +33,5 @@
         // * Creates frame-independent transformation *
         bunny.rotation += 0.1 * time.deltaTime;
     });
+    */
 })();
