@@ -1,25 +1,19 @@
 var test= new XMLHttpRequest();
 test.open('GET', 'pages/Test.html', true);
 
-function sleep(milliseconds) {
-  var start = new Date().getTime();
-  for (var i = 0; i < 1e7; i++) {
-    if ((new Date().getTime() - start) > milliseconds){
-      break;
-    }
-  }
+i = 0;
+
+function runFunction()
+{
+	document.getElementById("Bunny").style.top=i+"px";
+	i = i + 10;
 }
 
 $("#Content").load('pages/Research.html')
 $(".active").removeClass('active')
 $('#first').addClass('active')
 
-for (let i = 0; i < 1000; i++) {
-  document.getElementById("Bunny").style.top=i+"px";
-  sleep(100);
-}
-
-
+var t=setInterval(runFunction,100);
 
 
 function changeContent(name, id)
