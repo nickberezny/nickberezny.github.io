@@ -3,7 +3,7 @@ test.open('GET', 'pages/Test.html', true);
 
 i = 0;
 
-function runFunction()
+function runFunction(event)
 {
 	let x = event.clientX;
 	document.getElementById("Bunny").style.top=x+"px";
