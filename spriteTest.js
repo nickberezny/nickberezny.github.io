@@ -1,3 +1,5 @@
+import { Application, Assets, Sprite } from 'pixi.js';
+
 const texture = Assets.load('https://pixijs.com/assets/bunny.png');
 
 // Create a bunny Sprite
