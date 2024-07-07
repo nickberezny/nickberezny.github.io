@@ -1,4 +1,4 @@
-const texture = await Assets.load('https://pixijs.com/assets/bunny.png');
+const texture = Assets.load('https://pixijs.com/assets/bunny.png');
 
 // Create a bunny Sprite
 const bunny = new Sprite(texture);
