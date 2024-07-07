@@ -5,7 +5,7 @@ xp = 0
 yp = 0
 x = 0
 y = 0
-speed = 1.0;
+speed = 0.1;
 
 document.onmousemove = setMousePos;
 
