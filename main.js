@@ -12,7 +12,7 @@ document.onmousemove = setMousePos;
 function runFunction()
 {
 
-	let theta = Math.atan2((xp-x),(yp-y));
+	let theta = Math.atan2((yp-y),(xp-x));
 
 	x = x + speed*Math.cos(theta);
 	y = y + speed*Math.sin(theta);
