@@ -1,13 +1,19 @@
 var test= new XMLHttpRequest();
 test.open('GET', 'pages/Test.html', true);
 
-i = 0;
+x = 0
+y = 0
 
-function runFunction(event)
+function runFunction()
 {
-	let x = event.clientX;
-	document.getElementById("Bunny").style.top=x+"px";
-	i = i + 10;
+	document.getElementById("Bunny").style.top=y+"px";
+	document.getElementById("Bunny").style.left=x+"px";
+}
+
+function setMousePos(event)
+{
+	x = event.clientX;
+	y = event.clientY;
 }
 
 $("#Content").load('pages/Research.html')
