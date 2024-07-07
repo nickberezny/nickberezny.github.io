@@ -5,7 +5,8 @@ i = 0;
 
 function runFunction()
 {
-	document.getElementById("Bunny").style.top=i+"px";
+	let x = event.clientX;
+	document.getElementById("Bunny").style.top=x+"px";
 	i = i + 10;
 }
 
