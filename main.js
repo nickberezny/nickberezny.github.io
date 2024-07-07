@@ -6,16 +6,27 @@ yp = 0
 x = 0
 y = 0
 speed = 0.1;
+i = 0
 
 document.onmousemove = setMousePos;
 
 function runFunction()
 {
-
+	i = i + 1;
 	let theta = Math.atan2((yp-y),(xp-x));
 
 	x = x + speed*Math.cos(theta);
 	y = y + speed*Math.sin(theta);
+
+	if(i==500)
+	{
+		document.getElementById("Bunny").src="images/Bun-12.png";
+	}
+	else if(i==1000)
+	{
+		document.getElementById("Bunny").src="images/Bun-11.png";
+		i = 0;
+	}
 
 	document.getElementById("Bunny").style.top=y+"px";
 	document.getElementById("Bunny").style.left=x+"px";
@@ -33,7 +44,7 @@ $("#Content").load('pages/Research.html')
 $(".active").removeClass('active')
 $('#first').addClass('active')
 
-var t=setInterval(runFunction,10);
+var t=setInterval(runFunction,1);
 
 
 function changeContent(name, id)
