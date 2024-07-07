@@ -14,13 +14,15 @@ function setMousePos(event)
 {
 	x = event.clientX;
 	y = event.clientY;
+
+	console.log(x);
 }
 
 $("#Content").load('pages/Research.html')
 $(".active").removeClass('active')
 $('#first').addClass('active')
 
-var t=setInterval(runFunction,100);
+var t=setInterval(runFunction,10);
 
 
 function changeContent(name, id)
