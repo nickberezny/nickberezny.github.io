@@ -10,6 +10,6 @@ function changeContent(name, id)
 {
 	$("#Content").load('pages/' + name + '.html')
 	$(".active").removeClass('active')
-	$('#first').addClass('active')
+	$('#'+id).addClass('active')
 	
 }
