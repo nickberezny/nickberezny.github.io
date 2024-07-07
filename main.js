@@ -12,8 +12,10 @@ document.onmousemove = setMousePos;
 function runFunction()
 {
 
-	x = x + Math.sign(xp-x)*speed;
-	y = y + Math.sign(yp-y)*speed
+	let theta = Math.atan((yp-y)/(xp-x));
+
+	x = x + speed*Math.cos(theta);
+	y = y + speed*Math.sin(theta);
 
 	document.getElementById("Bunny").style.top=y+"px";
 	document.getElementById("Bunny").style.left=x+"px";
