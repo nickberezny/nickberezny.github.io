@@ -1,6 +1,6 @@
 var test= new XMLHttpRequest();
 test.open('GET', 'pages/Test.html', true);
-
+changeContent('Research', 'first');
 
 
 function changeContent(name, id)
