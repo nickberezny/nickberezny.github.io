@@ -4,6 +4,8 @@ test.open('GET', 'pages/Test.html', true);
 x = 0
 y = 0
 
+document.onmousemove = setMousePos;
+
 function runFunction()
 {
 	document.getElementById("Bunny").style.top=y+"px";
