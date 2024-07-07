@@ -3,7 +3,7 @@ test.open('GET', 'pages/Test.html', true);
 
 $("#Content").load('pages/Research.html')
 $(".active").removeClass('active')
-$('#'+id).addClass('active')
+$('#first').addClass('active')
 
 
 function changeContent(name, id)
