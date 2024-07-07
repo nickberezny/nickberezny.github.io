@@ -5,6 +5,8 @@ $("#Content").load('pages/Research.html')
 $(".active").removeClass('active')
 $('#first').addClass('active')
 
+document.getElementById("Bunny").style.top="400px";
+
 
 function changeContent(name, id)
 {
