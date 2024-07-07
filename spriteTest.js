@@ -13,7 +13,7 @@
     const texture = await PIXI.Assets.load('https://pixijs.com/assets/bunny.png');
 
     // Create a bunny Sprite
-    const bunny = new Sprite(texture);
+    const bunny = new PIXI.Sprite(texture);
 
     // Center the sprite's anchor point
     bunny.anchor.set(0.5);
