@@ -18,11 +18,11 @@ function runFunction()
 	x = x + speed*Math.cos(theta);
 	y = y + speed*Math.sin(theta);
 
-	if(i==500)
+	if(i==200)
 	{
 		document.getElementById("Bunny").src="images/Bun-12.png";
 	}
-	else if(i==1000)
+	else if(i==400)
 	{
 		document.getElementById("Bunny").src="images/Bun-11.png";
 		i = 0;
