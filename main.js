@@ -44,7 +44,7 @@ $("#Content").load('pages/Research.html')
 $(".active").removeClass('active')
 $('#first').addClass('active')
 
-var t=setInterval(runFunction,1);
+//var t=setInterval(runFunction,1);
 
 
 function changeContent(name, id)
