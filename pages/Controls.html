@@ -1,65 +1,51 @@
 <script src="loadFile.js"></script>
 	<div class="row">
-		<div class="six columns">
-			<h2> Robustness Framework for Interaction Control </h2>
+		<div class="nine columns">
+			<h4> Robustness Framework for Interaction Control </h4>
 			Interaction controllers are typically viewed from the perspective of causality: Impedance control is a torque-based controller, whereas Admittance control is a position-based controller. In this work I reframe interaction control in terms or robustness to modelling error and force sensor error. Interaction controllers are defined by sensitivity functions (S) to modelling error and force sensor error. The sensitivities are subject to the constraint:
 			<div id="math"><script>includeHTML('math','text/Math.html')</script></div> 
 			Therefore there is a a trade-off between robustness, and choosing an interaction controller is akin to an optimization problem. Many types of interaction controllers can thus be placed on a spectrum:
-			<center><img src="images/Spectrum.png" alt="Spectrum" style="width:70%;"></center>
-		</div>
-		<div class="three columns">
-			 <a href="https://github.com/nickberezny/UnifiedInteractionControl/blob/main/singleDOF.ipynb">Notebook (2025)</a>
-		</div>
-	</div>
-	<hr>
-	<div class="row">
-		<div class="three columns">
-			Unified Interaction Control (UIC)
-		</div>
-		<div class="six columns">
-			UIC is a generalization of UIAC and IM-IC. It alters a typical Admittance controller with an inner-loop gain weighting and a virtual state reset to interpolate across the IC/AC spectrum. This method also explains the effect of the reset, which is also found in UIAC and IM-IC. Interpolation can be understood as trading-off robustness to modelling error and force sensor error; or, simply as creating an output trajectory that is in-between IC and AC:
-			<center><img src="images/uic_exp.png" alt="UIC" style="width:70%;"></center>
+			<center><img src="images/Spectrum.png" alt="Spectrum" style="width:40%;"></center>
 		</div>
 		<div class="three columns">
 			 <a href="https://link.springer.com/article/10.1007/s44245-023-00025-4">Paper (2023)</a>
+			 <br>
+			 <a href="https://www.techrxiv.org/doi/full/10.36227/techrxiv.174952923.34445605">Paper (2025)</a>
 		</div>
 	</div>
 	<hr>
 	<div class="row">
-		<div class="three columns">
-			Applications with Unavoidable Force Sensor Error
+		<div class="nine columns">
+			<h4>Contact Stability with Industrial Robots</h4>
+			Here I applied interpolation to the problem of contact stability in industrial robots. To the extent that contact oscillations are caused by force sensor error (specifically, delay), they can be mitigated by interpolating to inject some robustness to this error. Experiments were carried out on a 6-DOF deburring robot.
+			<center><img src="images/Debbie.png" alt="Debbie" style="width:40%;"></center>
 		</div>
-		<div class="six columns">
+		<div class="three columns">
+		 	<a href="https://www.techrxiv.org/doi/full/10.36227/techrxiv.174952923.34445605">Paper (2025)</a>
+		</div>
+	</div>
+	<hr>
+	<div class="row">
+		<div class="nine columns">
+			<h4>Applications with Unavoidable Force Sensor Error</h4>
 			Here I applied the robustness perspective on interaction control for devices with inherent force sensor errors. Examples could include robot grasping, exoskeletons, though we do a case study with low-cost force sensors.
-			<center><img src="images/Assembly.png" alt="Assembly" style="width:70%;"></center>
+			<center><img src="images/Assembly.png" alt="Assembly" style="width:40%;"></center>
 			Using UIC, optimal performance can be achieved by trading-off robustness. The optimal level of interpolation is ultimately dependent on the physical impedance of the robot and the accuracy of the dynamic model. 
 		</div>
 		<div class="three columns">
+			<a href="https://ieeexplore.ieee.org/abstract/document/11007166">Paper (2025)</a>
 		</div>
 	</div>
+	
 	<hr>
 	<div class="row">
-		<div class="three columns">
-			Contact Stability with Industrial Robots
-		</div>
-		<div class="six columns">
-			Here I applied interpolation to the problem of contact stability in industrial robots. To the extent that contact oscillations are caused by force sensor error (specifically, delay), they can be mitigated by interpolating to inject some robustness to this error. Experiments were carried out on a 6-DOF deburring robot.
-			<center><img src="images/Debbie.png" alt="Debbie" style="width:70%;"></center>
-		</div>
-		<div class="three columns">
-		</div>
-	</div>
-	<hr>
-	<div class="row">
-		<div class="three columns">
-			High Impedance Haptics
-		</div>
-		<div class="six columns">
+		<div class="nine columns">
+			<h4>High Impedance Haptics</h4>
 			Application of the IC/AC spectrum to high-impedance haptic devices. Some haptic devices must be high-impedance so that they can handle larger forces (such as lower-limb robot interaction). However, these devices must also be able to render lower impedances to facilitate human-robot interaction. We show how the IC/AC spectrum translates into a trade-off between the transparency and the stability/passivity of the system. Interapolation can allow for optimization across the trade-off. 
-			<center><img src="images/ViGRR2.png" alt="ViGRR2" style="width:70%;"></center>
+			<center><img src="images/ViGRR2.png" alt="ViGRR2" style="width:40%;"></center>
 			<center><img src="images/Spectrum_Example2.jpg" alt="Spectrum_Example"></center>
 		</div>
 		<div class="three columns">
-			 <a href="https://github.com/nickberezny/high-impedance-haptics">Repo</a>
+			 <a href="https://link.springer.com/article/10.1007/s44245-023-00025-4">TBA</
 		</div>
 	</div>
