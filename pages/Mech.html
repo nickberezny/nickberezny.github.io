@@ -2,7 +2,7 @@
 	<div class="row">
 		<div class="nine columns">
 			<h4>Virtual Gait Rehabilitation Robot Lite (ViGRR-LITE)</h4>
-			A 1-DOF rehabilitation robot designed for assisting the lower-limb for bed-bound stroke patients. Includes haptic capabilities for interaction with a virtual environment. A real-time control system using RT-Linux with a pre-empted kernel is used to implement force and impedance control for safe human interaction. Designed in collaboration with physiotherapists/doctors to ensure compatibility with the hospital setting. 
+			A 1-DOF rehabilitation robot designed for assisting the lower-limb for bed-bound stroke patients. Includes haptic capabilities for interaction with a virtual environment. A real-time control system using Linux with a pre-empted kernel is used to implement force and impedance control for safe human interaction. Designed in collaboration with physiotherapists/doctors to ensure compatibility with the hospital setting. 
 			<center><img src="images/ViGRR_Lite_label.png" alt="ViGRR" style="width:50%;"></center>
 		</div>
 		<div class="three columns">
@@ -17,7 +17,7 @@
 	<div class="row">
 		<div class="nine columns">
 			<h4>Estimating Limb Impedance</h4>
-			Uses OpenSim to train a neural network that predicts leg end-point stiffness based on limb kinematics. Domain Adaption is then applied to tune the network to an individual based on a small amount of experimental data (1-3 points).
+			Estimating limb impedance can be important for safe and effective physiotherapy. It can be used to predict spasticity or design adaptive controllers for human interaction. Here I use OpenSim to train a neural network that predicts leg end-point stiffness based on limb kinematics. Domain Adaption is then applied to tune the network to an individual based on a small amount of experimental data (1-3 points). The result is a reasonably accurate model trained on minimal amounts of data, which is desired in clinical settings.
 			<br>
 			<img src="images/Leg39.png" alt="Leg39" style="width:40%;">
 			<img src="images/BarErrors4.png" alt="Bargraph" style="width:40%;">
