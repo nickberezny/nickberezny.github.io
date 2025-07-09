@@ -1,5 +1,5 @@
 var test= new XMLHttpRequest();
-test.open('GET', 'pages/Test.html', true);
+test.open('GET', 'pages/About.html', true);
 
 xp = 0
 yp = 0
