@@ -1,11 +1,12 @@
 <script src="loadFile.js"></script>
 	<div class="row">
 		<div class="nine columns">
-			<h4> Robustness Framework for Interaction Control </h4>
-			Interaction controllers are typically viewed from the perspective of causality: Impedance control is a torque-based controller, whereas Admittance control is a position-based controller. In this work I reframe interaction control in terms or robustness to modelling error and force sensor error. Interaction controllers are defined by sensitivity functions (S) to modelling error and force sensor error. The sensitivities are subject to the constraint:
+			<h4>Unifying Impedance and Admittance Control</h4>
+			Interaction controllers are typically viewed from the perspective of causality: Impedance Control is a torque-based controller, whereas Admittance Control is a position-based controller. In this work I reframe Interaction Control in terms or robustness to modelling uncertainty and force sensor error. Interaction controllers are defined by sensitivity functions (S) to modelling error and force sensor error. The sensitivities constrained to sum up to the desired admittance, i.e:
 			<div id="math"><script>includeHTML('math','text/Math.html')</script></div> 
 			Therefore there is a a trade-off between robustness, and choosing an interaction controller is akin to an optimization problem. Many types of interaction controllers can thus be placed on a spectrum:
 			<center><img src="images/Spectrum.png" alt="Spectrum" style="width:40%;"></center>
+			Impedance and Admittance exist on opposing sides of the IC/AC spectrum. Interpolation with hybrid controllers such as UIAC or UIC can trade-off the sensitivity levels to improve interaction perfromance.
 		</div>
 		<div class="three columns">
 			 <a href="https://link.springer.com/article/10.1007/s44245-023-00025-4">Paper (2023)</a>
@@ -17,7 +18,7 @@
 	<div class="row">
 		<div class="nine columns">
 			<h4>Contact Stability with Industrial Robots</h4>
-			Here I applied interpolation to the problem of contact stability in industrial robots. To the extent that contact oscillations are caused by force sensor error (specifically, delay), they can be mitigated by interpolating to inject some robustness to this error. Experiments were carried out on a 6-DOF deburring robot.
+			Here I applied interpolation to the problem of contact stability in industrial robots. To the extent that contact oscillations are caused by force sensor error (specifically, delay), they can be mitigated by interpolating to inject some robustness. Experiments were carried out on a 6-DOF industrial deburring robot.
 			<center><img src="images/Debbie.png" alt="Debbie" style="width:40%;"></center>
 		</div>
 		<div class="three columns">
@@ -28,7 +29,7 @@
 	<div class="row">
 		<div class="nine columns">
 			<h4>Applications with Unavoidable Force Sensor Error</h4>
-			Here I applied the robustness perspective on interaction control for devices with inherent force sensor errors. Examples could include robot grasping, exoskeletons, though we do a case study with low-cost force sensors.
+			Another appliction of IC/AC interpolation are devices where force sensor error is greater than in typicl robotic manipulators. Examples could include robot grasping, exoskeletons, though we do a case study with low-cost force sensors made with force sensitive resistors.
 			<center><img src="images/Assembly.png" alt="Assembly" style="width:40%;"></center>
 			Using UIC, optimal performance can be achieved by trading-off robustness. The optimal level of interpolation is ultimately dependent on the physical impedance of the robot and the accuracy of the dynamic model. 
 		</div>

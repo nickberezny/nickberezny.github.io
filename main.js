@@ -40,7 +40,7 @@ function setMousePos(event)
 	console.log(x);
 }
 
-$("#Content").load('pages/Research.html')
+$("#Content").load('pages/Controls.html')
 $(".active").removeClass('active')
 $('#first').addClass('active')
 
